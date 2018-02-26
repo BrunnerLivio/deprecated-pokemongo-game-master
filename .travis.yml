@@ -2,4 +2,13 @@ language: node_js
 node_js:
   - "8"
   - "6.1"
-before_install: if [[ `npm -v` != 4* ]]; then npm i -g npm@4; fi
+before_script:
+  - gem install travis
+
+script:
+  - npm run test
+
+after_success:
+  - curl -LO https://raw.github.com/brunnerlivio/pokemongo-game-master/master/bin/trigger.sh
+  - chmod +x trigger.sh
+  - ./trigger.sh brunnerlivio pokemongo-json-pokedex master $TRAVIS_ACCESS_TOKEN 
