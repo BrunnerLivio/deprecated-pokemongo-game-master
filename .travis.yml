@@ -9,6 +9,6 @@ script:
   - npm run test
 
 after_success:
-  - curl -LO https://raw.github.com/brunnerlivio/pokemongo-game-master/master/bin/trigger.sh
+  - curl -LO https://raw.github.com/brunnerlivio/pokemongo-game-master/${TRAVIS_BRANCH}/bin/trigger.sh
   - chmod +x trigger.sh
-  - ./trigger.sh brunnerlivio pokemongo-json-pokedex master $TRAVIS_ACCESS_TOKEN 
+  - ./trigger.sh brunnerlivio pokemongo-json-pokedex master $TRAVIS_ACCESS_TOKEN $TRAVIS_BRANCH

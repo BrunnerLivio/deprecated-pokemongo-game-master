@@ -11,10 +11,11 @@ USER=$1
 DOWNSTREAM_REPO=$2
 BRANCH=$3
 TRAVIS_ACCESS_TOKEN=$4
-MESSAGE=$5
+MESSAGE=$6
+CURRENT_BRANCH=$5
 
 # fetch trigger-travis script and make executable
-curl -LO "https://raw.github.com/brunnerlivio/pokemongo-game-master/master/bin/trigger-travis.sh"
+curl -LO "https://raw.githubusercontent.com/BrunnerLivio/pokemongo-game-master/${CURRENT_BRANCH}/bin/trigger-travis.sh"
 chmod +x trigger-travis.sh
 
 # check for correct input
