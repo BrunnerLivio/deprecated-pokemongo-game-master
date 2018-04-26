@@ -1,4 +1,10 @@
-﻿# pokemongo-game-master
+﻿> DEPRECATED:
+>
+> THIS REPOSITORY HAS MOVED TO [pokemongo-dev-contrib/pokemongo-game-master](https://github.com/pokemongo-dev-contrib/pokemongo-game-master)
+> 
+> DO NOT FURTHER USE THIS REPOSITORY
+
+# pokemongo-game-master
 
 [![Online Users in pokemongo-game-master Discord Server](https://discordapp.com/api/guilds/293741011665027073/embed.png)](https://discord.gg/ssVqwvX)
 
